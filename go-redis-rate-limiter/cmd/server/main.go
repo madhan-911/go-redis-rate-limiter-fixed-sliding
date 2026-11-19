@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	addr := getenv("HTTP_ADDR", ":8080")
+	addr := getenv("HTTP_ADDR", ":8081")
 	redisAddr := getenv("REDIS_ADDR", "localhost:6379")
 	limit := getenvInt("RATE_LIMIT", 5)
 	window := getenvDuration("RATE_WINDOW", 10*time.Second)
